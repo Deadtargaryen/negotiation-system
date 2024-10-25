@@ -90,6 +90,10 @@ const Products = () => {
 
   return (
     <div className="mt-10 mx-auto w-11/12 sm:w-2/3 p-5">
+    {/* Logo at the top-left */}
+    <div className="absolute top-4 left-4">
+        <img src="/logo.png" alt="Logo" className="w-96 h-42" />
+      </div>
       <h1 className="text-3xl font-bold mb-8 text-center">Products</h1>
       <ul className="space-y-6">
         {products.map((product) => (
@@ -100,7 +104,7 @@ const Products = () => {
                 <p className="text-gray-500">${product.price}</p>
               </div>
               <button
-                className="ml-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition duration-300"
+                className="ml-2 bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded transition duration-300"
                 onClick={() => handleStartNegotiation(product)}
               >
                 Negotiate

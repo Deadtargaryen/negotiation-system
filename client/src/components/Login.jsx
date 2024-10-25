@@ -22,6 +22,10 @@ const Login = ({ onLogin }) => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      {/* Logo at the top-left */}
+      <div className="absolute top-4 left-4">
+        <img src="/logo.png" alt="Logo" className="w-96 h-42" />
+      </div>
       <form onSubmit={handleLogin} className="bg-white shadow-lg rounded-lg p-10 w-80 max-w-md border border-gray-200">
         <h2 className="text-3xl font-semibold text-gray-800 text-center mb-8">Login</h2>
         <div className="space-y-6">

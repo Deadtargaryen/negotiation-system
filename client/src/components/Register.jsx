@@ -21,6 +21,10 @@ const Register = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    {/* Logo at the top-left */}
+    <div className="absolute top-4 left-4">
+        <img src="/logo.png" alt="Logo" className="w-96 h-42" />
+      </div>
       <form onSubmit={handleRegister} className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
         <h2 className="text-2xl font-bold text-center mb-6">Register</h2>
         <input
