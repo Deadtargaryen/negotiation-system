@@ -21,31 +21,33 @@ const Login = ({ onLogin }) => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <form onSubmit={handleLogin} className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
-        <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          className="border border-gray-300 p-3 w-full rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          required
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="border border-gray-300 p-3 w-full rounded-md mb-6 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          required
-        />
-        <button
-          type="submit"
-          className="w-full bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 transition duration-300"
-        >
-          Login
-        </button>
+    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <form onSubmit={handleLogin} className="bg-white shadow-lg rounded-lg p-10 w-80 max-w-md border border-gray-200">
+        <h2 className="text-3xl font-semibold text-gray-800 text-center mb-8">Login</h2>
+        <div className="space-y-6">
+          <input
+            type="text"
+            placeholder="Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            className="border border-gray-300 p-3 w-full rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="border border-gray-300 p-3 w-full rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            required
+          />
+          <button
+            type="submit"
+            className="w-full bg-yellow-500 text-white py-3 rounded hover:bg-yellow-600 transition duration-300 font-semibold"
+          >
+            Login
+          </button>
+        </div>
       </form>
     </div>
   );
